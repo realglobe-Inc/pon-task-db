@@ -22,7 +22,7 @@ describe('define', function () {
   }))
 
   it('Define', () => co(function * () {
-    const db = theDB()
+    const db = theDB({})
     let ctx = ponContext()
     let task = define({
       seed: [ db, '*.seed.json', {} ]
