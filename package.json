@@ -1,0 +1,50 @@
+{
+  "name": "pon-task-db",
+  "version": "1.0.0",
+  "description": "DB task set for pon",
+  "main": "lib",
+  "browser": "shim/browser",
+  "scripts": {
+    "prepare": "node ./ci/build.js && node ./ci/shim.js ",
+    "test": "node ./ci/test.js"
+  },
+  "repository": "realglobe-Inc/pon-task-db",
+  "keywords": [
+    "Pon"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinish@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/pon-task-db/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/pon-task-db#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "pon-task-seed": "^1.0.1"
+  },
+  "devDependencies": {
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "amocha": "^2.0.0",
+    "ape-doc": "^2.0.4",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-tasking": "^4.0.9",
+    "ape-tmpl": "^5.0.20",
+    "ape-updating": "^4.1.0",
+    "coz": "^6.0.20",
+    "injectmock": "^2.0.0",
+    "pon-context": "^2.0.2",
+    "pon-doc": "^2.0.1",
+    "sugos-travis": "^2.0.7",
+    "the-db": "^3.0.4"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}
