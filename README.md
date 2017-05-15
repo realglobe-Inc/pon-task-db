@@ -75,14 +75,14 @@ Usage
 'use strict'
 
 const pon = require('pon')
-const ponTaskDb = require('pon-task-db')
+const { seed } = require('pon-task-db')
 
 async function tryExample () {
   let run = pon({
-    myTask01: ponTaskDb()
+    'db:seed': seed(() => {/*...*/}, 'db/seeds/:env/*.seed.json')
   })
 
-  run('myTask01')
+  run('db:seed')
 }
 
 tryExample()
