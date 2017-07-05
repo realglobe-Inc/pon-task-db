@@ -1,16 +1,17 @@
 /**
- * Test case for define.
+ * Test case for drop.
  * Runs with mocha.
  */
 'use strict'
 
-const define = require('../lib/define.js')
+const drop = require('../lib/drop.js')
 const ponContext = require('pon-context')
 const { ok } = require('assert')
 const theDB = require('the-db')
+
 const co = require('co')
 
-describe('define', function () {
+describe('drop', function () {
   this.timeout(3000)
 
   before(() => co(function * () {
@@ -21,19 +22,16 @@ describe('define', function () {
 
   }))
 
-  it('Define', () => co(function * () {
+  it('Drop', () => co(function * () {
     const db = theDB({})
 
     db.resource('User', {})
     db.resource('Org', {})
     let ctx = ponContext()
-    let task = define({
-      seed: [ db, '*.seed.json', {} ],
-      drop: [ db ]
-    })
-    ok(task)
 
-    yield Promise.resolve(task(ctx))
+    let task = drop(db)
+
+    yield task(ctx)
   }))
 })
 
