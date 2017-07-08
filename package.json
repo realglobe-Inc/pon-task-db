@@ -24,7 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/pon-task-db#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "pon-task-seed": "^1.0.7"
+    "pon-task-seed": "^1.0.8"
   },
   "devDependencies": {
     "ababel": "^2.0.2",

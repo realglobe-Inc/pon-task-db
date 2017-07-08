@@ -109,12 +109,25 @@ Define task
 | options | Object |  Optional settings |
 
 
-### ``
+### `drop(db, options) -> function`
 
-
+Define task to drop database
 
 | Param | type | Description |
 | ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| options | Object |  Optional settings |
+| options.unless | string |  NODE_ENV to skip |
+
+
+### `setup(db, options) -> function`
+
+Define task to setup database
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| options | Object |  Optional settings |
 
 
 
