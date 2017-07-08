@@ -6,6 +6,8 @@
 
 const setup = require('../lib/setup.js')
 const assert = require('assert')
+const ponContext = require('pon-context')
+const theDB = require('the-db')
 const co = require('co')
 
 describe('setup', function () {
@@ -20,7 +22,12 @@ describe('setup', function () {
   }))
 
   it('Setup', () => co(function * () {
+    const db = theDB({})
 
+    let ctx = ponContext()
+    let task = setup(() => db)
+
+    yield task(ctx)
   }))
 })
 

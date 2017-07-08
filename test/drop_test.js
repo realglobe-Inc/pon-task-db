@@ -27,9 +27,9 @@ describe('drop', function () {
 
     db.resource('User', {})
     db.resource('Org', {})
-    let ctx = ponContext()
 
-    let task = drop(db)
+    let ctx = ponContext()
+    let task = drop(() => db)
 
     yield task(ctx)
   }))
