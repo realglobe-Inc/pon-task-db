@@ -13,15 +13,15 @@ const co = require('co')
 describe('define', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Define', () => co(function * () {
+  it('Define', async () => {
     const db = theDB({})
 
     db.resource('User', {})
@@ -33,8 +33,8 @@ describe('define', function () {
     })
     ok(task)
 
-    yield Promise.resolve(task(ctx))
-  }))
+    await Promise.resolve(task(ctx))
+  })
 })
 
 /* global describe, before, after, it */

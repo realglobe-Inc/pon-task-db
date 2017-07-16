@@ -13,22 +13,22 @@ const co = require('co')
 describe('setup', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Setup', () => co(function * () {
+  it('Setup', async () => {
     const db = theDB({})
 
     let ctx = ponContext()
     let task = setup(() => db)
 
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */

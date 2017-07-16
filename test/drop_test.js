@@ -14,15 +14,15 @@ const co = require('co')
 describe('drop', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Drop', () => co(function * () {
+  it('Drop', async () => {
     const db = theDB({})
 
     db.resource('User', {})
@@ -31,8 +31,8 @@ describe('drop', function () {
     let ctx = ponContext()
     let task = drop(() => db)
 
-    yield task(ctx)
-  }))
+    await task(ctx)
+  })
 })
 
 /* global describe, before, after, it */
