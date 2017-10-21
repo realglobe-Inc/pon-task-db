@@ -1,6 +1,6 @@
 {
   "name": "pon-task-db",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "DB task set for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,24 +23,25 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-db#readme",
   "dependencies": {
-    "pon-task-seed": "^2.0.1"
+    "asfs": "^2.0.1",
+    "pon-task-seed": "^2.0.2"
   },
   "devDependencies": {
     "ababel": "^2.0.2",
     "ababel-es2015": "^2.0.2",
-    "amocha": "^2.0.0",
+    "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "the-db": "^5.0.0"
+    "the-db": "^7.1.15"
   },
   "engines": {
     "node": ">=7.6",

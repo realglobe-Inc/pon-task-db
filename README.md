@@ -120,6 +120,17 @@ Define task to drop database
 | options.unless | string |  NODE_ENV to skip |
 
 
+### `dump(db, options) -> function`
+
+Define task to dump database
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| options | Object |  Optional settings |
+| options.max | number |  Max count |
+
+
 ### `setup(db, options) -> function`
 
 Define task to setup database
