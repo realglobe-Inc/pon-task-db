@@ -23,11 +23,12 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-db#readme",
   "dependencies": {
+    "akv": "^2.0.0",
     "asfs": "^2.0.1",
     "pon-task-seed": "^2.0.2"
   },
   "devDependencies": {
-    "ababel": "^2.0.2",
+    "ababel": "^2.0.3",
     "ababel-es2015": "^2.0.2",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
