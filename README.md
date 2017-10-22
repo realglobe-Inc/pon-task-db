@@ -129,7 +129,7 @@ Define task to dump database
 | db | function&amp;#124;ClayLump |  DB instance or it's creator |
 | dirname | string |  Dirname to save dump |
 | options | Object |  Optional settings |
-| options.max | number |  Max count |
+| options.max | number |  Rotation max count |
 
 
 ### `setup(db, options) -> function`
