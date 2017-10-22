@@ -120,13 +120,14 @@ Define task to drop database
 | options.unless | string |  NODE_ENV to skip |
 
 
-### `dump(db, options) -> function`
+### `dump(db, dirname, options) -> function`
 
 Define task to dump database
 
 | Param | type | Description |
 | ---- | --- | ----------- |
 | db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| dirname | string |  Dirname to save dump |
 | options | Object |  Optional settings |
 | options.max | number |  Max count |
 
