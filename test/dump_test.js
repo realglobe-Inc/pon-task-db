@@ -7,6 +7,7 @@
 const dump = require('../lib/dump.js')
 const ponContext = require('pon-context')
 const {ok} = require('assert')
+const asleep = require('asleep')
 const theDB = require('the-db')
 
 describe('dump', function () {
@@ -24,8 +25,9 @@ describe('dump', function () {
     const db = theDB({})
 
     const ctx = ponContext()
-    const task = dump(() => db, `${__dirname}/../tmp/testing-dump`, {
-      max: 2
+    const task = dump(() => db, `${__dirname}/../tmp/testing-dump-dump`, {
+      max: 2,
+      minInterval: 80
     })
 
     await task(ctx)
