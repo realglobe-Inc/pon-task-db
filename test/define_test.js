@@ -6,7 +6,7 @@
 
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
-const { ok } = require('assert')
+const {ok} = require('assert')
 const theDB = require('the-db')
 const co = require('co')
 
@@ -26,10 +26,12 @@ describe('define', function () {
 
     db.resource('User', {})
     db.resource('Org', {})
-    let ctx = ponContext()
-    let task = define({
-      seed: [ db, '*.seed.json', {} ],
-      drop: [ db ]
+    const ctx = ponContext()
+    const task = define({
+      seed: [db, '*.seed.json', {}],
+      drop: [db],
+      setup: [db],
+      dump: [db, `${__dirname}/../tmp/testing-dump`]
     })
     ok(task)
 
