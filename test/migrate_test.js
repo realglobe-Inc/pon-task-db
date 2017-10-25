@@ -9,7 +9,7 @@ const theDB = require('the-db')
 const ponContext = require('pon-context')
 
 describe('migrate', function () {
-  this.timeout(8000)
+  this.timeout(12000)
 
   before(async () => {
 
@@ -48,6 +48,7 @@ describe('migrate', function () {
     await task(ctx)
 
     await db.drop()
+    await db.close()
 
   })
 })
