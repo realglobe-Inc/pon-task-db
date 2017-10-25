@@ -30,7 +30,7 @@ describe('migrate', function () {
       name: 'hoge'
     })
     const ctx = ponContext()
-
+    await db.drop()
     const task = migrate(() => db, {
       async 'none' (db) {
         console.log('none')
@@ -46,9 +46,6 @@ describe('migrate', function () {
 
     await task(ctx)
     await task(ctx)
-
-    await db.drop()
-    await db.close()
 
   })
 })
