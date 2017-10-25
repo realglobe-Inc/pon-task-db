@@ -5,7 +5,8 @@
 'use strict'
 
 const load = require('../lib/load.js')
-const assert = require('assert')
+const theDB = require('the-db')
+const ponContext = require('pon-context')
 
 describe('load', function () {
   this.timeout(3000)
@@ -19,7 +20,17 @@ describe('load', function () {
   })
 
   it('Load', async () => {
+    const createDB = () => theDB({
+      dialect: 'sqlite',
+      storage: `${__dirname}/../tmp/testing-migration/test-load.db`
+    })
+    const db = createDB()
 
+    const ctx = ponContext({})
+    const task = load(db, `${__dirname}/../misc/mocks/mock-sql-01.sql`)
+    await task(ctx)
+
+    await db.close()
   })
 })
 
