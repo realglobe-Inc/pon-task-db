@@ -42,7 +42,7 @@
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sugos-travis": "^2.0.7",
-    "the-db": "^7.1.17"
+    "the-db": "^7.2.1"
   },
   "engines": {
     "node": ">=7.6",

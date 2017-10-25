@@ -75,11 +75,14 @@ Usage
 'use strict'
 
 const pon = require('pon')
-const { seed } = require('pon-task-db')
+const {setup, seed, dump, migrate} = require('pon-task-db')
 
 async function tryExample () {
-  let run = pon({
-    'db:seed': seed(() => {/*...*/}, 'db/seeds/:env/*.seed.json')
+  const createDB = () => {/*...*/}
+
+  const run = pon({
+    'db:setup': setup(createDB),
+    'db:seed': seed(createDB, 'db/seeds/:env/*.seed.json')
   })
 
   run('db:seed')
@@ -130,6 +133,16 @@ Define task to dump database
 | dirname | string |  Dirname to save dump |
 | options | Object |  Optional settings |
 | options.max | number |  Rotation max count |
+
+
+### `migrate(db, handlers) -> function`
+
+Define task
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| handlers | Object |  Migration handlers |
 
 
 ### `setup(db, options) -> function`

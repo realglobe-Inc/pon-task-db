@@ -1,11 +1,14 @@
 'use strict'
 
 const pon = require('pon')
-const {seed} = require('pon-task-db')
+const {setup, seed, dump, migrate} = require('pon-task-db')
 
 async function tryExample () {
+  const createDB = () => {/*...*/}
+
   const run = pon({
-    'db:seed': seed(() => {/*...*/}, 'db/seeds/:env/*.seed.json')
+    'db:setup': setup(createDB),
+    'db:seed': seed(createDB, 'db/seeds/:env/*.seed.json')
   })
 
   run('db:seed')
