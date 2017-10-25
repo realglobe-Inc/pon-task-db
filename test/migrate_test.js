@@ -7,6 +7,7 @@
 const migrate = require('../lib/migrate.js')
 const theDB = require('the-db')
 const ponContext = require('pon-context')
+const asleep = require('asleep')
 
 describe('migrate', function () {
   this.timeout(12000)
@@ -30,7 +31,6 @@ describe('migrate', function () {
       name: 'hoge'
     })
     const ctx = ponContext()
-    await db.drop()
     const task = migrate(createDB, {
       async 'none' (db) {
         console.log('none')
@@ -38,15 +38,15 @@ describe('migrate', function () {
       },
       async 'hoge' () {
         console.log('hoge')
-        await db.updateVersion('foo')
+        await db.updateVersion('nonono')
       }
     }, {
       // snapshot: `${__dirname}/../tmp/testing-migration/snapshot`
     })
 
     await task(ctx)
-
-    await db.close()
+    await asleep(200)
+    await db.drop()
   })
 })
 

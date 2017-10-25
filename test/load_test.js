@@ -27,7 +27,7 @@ describe('load', function () {
     const db = createDB()
 
     const ctx = ponContext({})
-    const task = load(db, `${__dirname}/../misc/mocks/mock-sql-01.sql`)
+    const task = load(db, `${__dirname}/../misc/mocks/mock-sql-02.sql`)
     await task(ctx)
 
     await db.close()
