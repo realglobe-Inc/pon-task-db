@@ -45,7 +45,6 @@ describe('migrate', function () {
     })
 
     await task(ctx)
-    await task(ctx)
 
     await db.close()
   })
