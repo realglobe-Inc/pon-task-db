@@ -9,7 +9,7 @@ const theDB = require('the-db')
 const ponContext = require('pon-context')
 
 describe('migrate', function () {
-  this.timeout(3000)
+  this.timeout(8000)
 
   before(async () => {
 
