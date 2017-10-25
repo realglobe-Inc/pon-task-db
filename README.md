@@ -145,6 +145,16 @@ Define task to exec database
 | options | Object |  Optional settings |
 
 
+### `load(db, options) -> function`
+
+Define task to load file into database
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| options | Object |  Optional settings |
+
+
 ### `migrate(db, handlers) -> function`
 
 Define task
@@ -153,16 +163,6 @@ Define task
 | ---- | --- | ----------- |
 | db | function&amp;#124;ClayLump |  DB instance or it's creator |
 | handlers | Object |  Migration handlers |
-
-
-### `restore(db, options) -> function`
-
-Define task to restore database
-
-| Param | type | Description |
-| ---- | --- | ----------- |
-| db | function&amp;#124;ClayLump |  DB instance or it's creator |
-| options | Object |  Optional settings |
 
 
 ### `setup(db, options) -> function`
