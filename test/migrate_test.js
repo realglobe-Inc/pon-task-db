@@ -20,18 +20,18 @@ describe('migrate', function () {
   })
 
   it('Migrate', async () => {
-    const db = theDB({
+    const createDB = () => theDB({
       dialect: 'sqlite',
       storage: `${__dirname}/../tmp/testing-migration/test-data.db`
     })
-
+    const db = createDB()
     const Hoge = db.resource('Hoge')
     await Hoge.create({
       name: 'hoge'
     })
     const ctx = ponContext()
     await db.drop()
-    const task = migrate(() => db, {
+    const task = migrate(createDB, {
       async 'none' (db) {
         console.log('none')
         await db.updateVersion('hoge')
@@ -47,6 +47,7 @@ describe('migrate', function () {
     await task(ctx)
     await task(ctx)
 
+    await db.close()
   })
 })
 
