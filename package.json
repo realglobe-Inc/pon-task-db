@@ -1,6 +1,6 @@
 {
   "name": "pon-task-db",
-  "version": "2.2.5",
+  "version": "2.3.0",
   "description": "DB task set for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/realglobe-Inc/pon-task-db#readme",
   "dependencies": {
+    "aglob": "^3.0.0",
     "akv": "^2.0.0",
     "asfs": "^2.0.1",
+    "askconfig": "^4.0.0",
     "pon-task-seed": "^2.0.2"
   },
   "devDependencies": {
@@ -43,7 +45,7 @@
     "pon-doc": "^2.0.1",
     "sqlite3": "^3.1.13",
     "sugos-travis": "^2.0.7",
-    "the-db": "^7.3.2"
+    "the-db": "^7.5.0"
   },
   "engines": {
     "node": ">=7.6",
