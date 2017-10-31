@@ -38,7 +38,11 @@ describe('migrate', function () {
       },
       async 'hoge' () {
         console.log('hoge')
-        await db.updateVersion('nonono')
+        await db.updateVersion('fuge')
+      },
+      async 'fuge' () {
+        console.log('hoge')
+        await db.updateVersion('2.0.0')
       }
     }, {
       // snapshot: `${__dirname}/../tmp/testing-migration/snapshot`

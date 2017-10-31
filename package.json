@@ -27,6 +27,7 @@
     "akv": "^2.0.0",
     "asfs": "^2.0.1",
     "askconfig": "^4.0.0",
+    "asleep": "^1.0.3",
     "pon-task-seed": "^2.0.2"
   },
   "devDependencies": {
@@ -39,14 +40,13 @@
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^6.0.2",
     "ape-updating": "^4.1.0",
-    "asleep": "^1.0.3",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
     "sqlite3": "^3.1.13",
     "sugos-travis": "^2.0.7",
-    "the-db": "^7.6.9"
+    "the-db": "^7.8.4"
   },
   "engines": {
     "node": ">=7.6",
