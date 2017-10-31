@@ -52,6 +52,38 @@ describe('migrate', function () {
     await asleep(200)
     await db.drop()
   })
+
+  it('With Memory Driver', async () => {
+    const createDB = () => theDB({
+      dialect: 'memory',
+    })
+    const db = createDB()
+    const Hoge = db.resource('Hoge')
+    await Hoge.create({
+      name: 'hoge'
+    })
+    const ctx = ponContext()
+    const task = migrate(createDB, {
+      async 'none' (db) {
+        console.log('none')
+        await db.updateVersion('hoge')
+      },
+      async 'hoge' () {
+        console.log('hoge')
+        await db.updateVersion('fuge')
+      },
+      async 'fuge' () {
+        console.log('hoge')
+        await db.updateVersion('2.0.0')
+      }
+    }, {
+      // snapshot: `${__dirname}/../tmp/testing-migration/snapshot`
+    })
+
+    await task(ctx)
+    await asleep(200)
+    await db.drop()
+  })
 })
 
 /* global describe, before, after, it */
