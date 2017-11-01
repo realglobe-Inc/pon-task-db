@@ -30,7 +30,9 @@ describe('define', function () {
       seed: [db, '*.seed.json', {}],
       drop: [db],
       setup: [db],
-      dump: [db, `${__dirname}/../tmp/testing-dump`]
+      dump: [db, `${__dirname}/../tmp/testing-dump`],
+      exp: [db, `${__dirname}/../tmp/testing-exp`],
+      imp: [db, `${__dirname}/../tmp/testing-exp`]
     })
     ok(task)
 
