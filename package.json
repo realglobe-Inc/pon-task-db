@@ -28,7 +28,7 @@
     "asfs": "^2.0.1",
     "askconfig": "^4.0.0",
     "asleep": "^1.0.3",
-    "pon-task-seed": "^2.0.4"
+    "pon-task-seed": "^2.0.5"
   },
   "devDependencies": {
     "ababel": "^2.0.3",
