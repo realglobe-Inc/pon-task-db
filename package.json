@@ -28,7 +28,7 @@
     "asfs": "^2.0.1",
     "askconfig": "^4.0.0",
     "asleep": "^1.0.3",
-    "pon-task-seed": "^2.0.2"
+    "pon-task-seed": "^2.0.4"
   },
   "devDependencies": {
     "ababel": "^2.0.3",
@@ -38,7 +38,7 @@
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.2",
+    "ape-tmpl": "^6.0.6",
     "ape-updating": "^4.1.0",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
@@ -46,7 +46,7 @@
     "pon-doc": "^2.0.1",
     "sqlite3": "^3.1.13",
     "sugos-travis": "^2.0.7",
-    "the-db": "^7.8.10"
+    "the-db": "^7.9.3"
   },
   "engines": {
     "node": ">=7.6",
