@@ -27,7 +27,8 @@ describe('dump', function () {
     const ctx = ponContext()
     const task = dump(() => db, `${__dirname}/../tmp/testing-dump-dump`, {
       max: 2,
-      minInterval: 80
+      minInterval: 80,
+      gzip: true,
     })
 
     await task(ctx)
