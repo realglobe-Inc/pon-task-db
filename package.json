@@ -28,6 +28,7 @@
     "asfs": "^2.0.1",
     "askconfig": "^4.0.0",
     "asleep": "^1.0.3",
+    "execcli": "^5.0.2",
     "pon-task-seed": "^2.0.5"
   },
   "devDependencies": {
