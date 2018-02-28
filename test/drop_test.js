@@ -7,7 +7,7 @@
 const drop = require('../lib/drop.js')
 const ponContext = require('pon-context')
 const { ok } = require('assert')
-const theDB = require('the-db')
+const theDB = require('the-db').default
 
 
 

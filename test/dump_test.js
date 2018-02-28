@@ -8,7 +8,7 @@ const dump = require('../lib/dump.js')
 const ponContext = require('pon-context')
 const {ok} = require('assert')
 const asleep = require('asleep')
-const theDB = require('the-db')
+const theDB = require('the-db').default
 
 describe('dump', function () {
   this.timeout(3000)
