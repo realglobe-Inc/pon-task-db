@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "ababel": "^4.0.7",
-    "ababel-es2015": "^2.0.2",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
