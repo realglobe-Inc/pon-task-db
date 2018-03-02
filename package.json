@@ -1,6 +1,6 @@
 {
   "name": "pon-task-db",
-  "version": "2.3.11",
+  "version": "2.3.12",
   "description": "DB task set for pon",
   "main": "lib",
   "browser": "shim/browser",
