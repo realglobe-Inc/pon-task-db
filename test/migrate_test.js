@@ -10,7 +10,7 @@ const ponContext = require('pon-context')
 const asleep = require('asleep')
 
 describe('migrate', function () {
-  this.timeout(12000)
+  this.timeout(22000)
 
   before(async () => {
 
