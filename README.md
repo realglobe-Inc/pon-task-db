@@ -185,6 +185,16 @@ Define task
 | handlers | Object |  Migration handlers |
 
 
+### `refresh(db, options) -> function`
+
+Define task to refresh database
+
+| Param | type | Description |
+| ---- | --- | ----------- |
+| db | function&amp;#124;ClayLump |  DB instance or it's creator |
+| options | Object |  Optional settings |
+
+
 ### `setup(db, options) -> function`
 
 Define task to setup database

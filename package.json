@@ -29,10 +29,10 @@
     "askconfig": "^4.0.1",
     "asleep": "^1.0.3",
     "execcli": "^5.0.2",
-    "pon-task-seed": "^2.0.11"
+    "pon-task-seed": "^2.0.14"
   },
   "devDependencies": {
-    "ababel": "^4.0.7",
+    "ababel": "^4.0.8",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
@@ -44,9 +44,9 @@
     "injectmock": "^2.0.0",
     "pon-context": "^2.0.2",
     "pon-doc": "^2.0.1",
-    "sqlite3": "^3.1.13",
+    "sqlite3": "^4.0.0",
     "sugos-travis": "^2.0.7",
-    "the-db": "^9.3.12"
+    "the-db": "^9.3.23"
   },
   "engines": {
     "node": ">=7.6",
