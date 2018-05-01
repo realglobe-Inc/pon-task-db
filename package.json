@@ -46,7 +46,7 @@
     "pon-doc": "^2.0.1",
     "sqlite3": "^4.0.0",
     "sugos-travis": "^2.0.7",
-    "the-db": "^9.3.39"
+    "the-db": "^9.3.40"
   },
   "engines": {
     "node": ">=7.6",
