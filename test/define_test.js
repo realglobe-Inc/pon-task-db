@@ -7,7 +7,7 @@
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
 const {ok} = require('assert')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 
 describe('define', function () {
   this.timeout(3000)

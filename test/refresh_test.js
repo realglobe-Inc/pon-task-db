@@ -7,7 +7,7 @@
 const refresh = require('../lib/refresh.js')
 const assert = require('assert')
 const ponContext = require('pon-context')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 
 describe('refresh', function () {
   this.timeout(3000)

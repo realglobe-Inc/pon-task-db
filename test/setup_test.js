@@ -7,7 +7,7 @@
 const setup = require('../lib/setup.js')
 const assert = require('assert')
 const ponContext = require('pon-context')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 
 
 describe('setup', function () {

@@ -5,7 +5,7 @@
 'use strict'
 
 const migrate = require('../lib/migrate.js')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 

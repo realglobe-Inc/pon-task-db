@@ -7,7 +7,7 @@
 const exp = require('../lib/exp.js')
 const imp = require('../lib/imp.js')
 const {equal} = require('assert')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 

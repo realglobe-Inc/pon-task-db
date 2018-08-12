@@ -5,7 +5,7 @@
 'use strict'
 
 const load = require('../lib/load.js')
-const theDB = require('the-db').default
+const theDB = require('the-db')
 const ponContext = require('pon-context')
 
 describe('load', function () {
