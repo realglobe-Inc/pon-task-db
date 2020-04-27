@@ -22,10 +22,13 @@ describe('migrate', function () {
 
   it('Migrate', async () => {
     const createDB = () => theDB({
-      dialect: 'sqlite',
-      storage: `${__dirname}/../tmp/testing-migration/test-data.db`
+      dialect: 'sequelize/sqlite',
+      storage: `${__dirname}/../tmp/testing-migration/test-data.db`,
+      resources: {
+        Hoge: ({ define }) => define({}),
+      },
     })
-    const db = createDB()
+    const db = createDB({})
     const Hoge = db.resource('Hoge')
     await Hoge.create({
       name: 'hoge'

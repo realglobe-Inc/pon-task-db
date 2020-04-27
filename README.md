@@ -145,26 +145,6 @@ Define task to exec database
 | options | Object |  Optional settings |
 
 
-### `exp(db, dirname) -> function`
-
-
-
-| Param | type | Description |
-| ---- | --- | ----------- |
-| db | function&amp;#124;ClayLump |  DB instance or it's creator |
-| dirname | string |  Dirname export from |
-
-
-### `imp(db, dirname) -> function`
-
-
-
-| Param | type | Description |
-| ---- | --- | ----------- |
-| db | function&amp;#124;ClayLump |  DB instance or it's creator |
-| dirname | string |  Dirname import from |
-
-
 ### `load(db, options) -> function`
 
 Define task to load file into database

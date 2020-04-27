@@ -6,7 +6,7 @@
 
 const define = require('../lib/define.js')
 const ponContext = require('pon-context')
-const {ok} = require('assert')
+const { ok } = require('assert')
 const theDB = require('@the-/db')
 
 describe('define', function () {
@@ -31,8 +31,6 @@ describe('define', function () {
       drop: [db],
       setup: [db],
       dump: [db, `${__dirname}/../tmp/testing-dump`],
-      exp: [db, `${__dirname}/../tmp/testing-exp`],
-      imp: [db, `${__dirname}/../tmp/testing-exp`]
     })
     ok(task)
 
