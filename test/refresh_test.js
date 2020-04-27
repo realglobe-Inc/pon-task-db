@@ -1,5 +1,5 @@
 /**
- * Test case for refresh.
+ * @file Test case for refresh.
  * Runs with mocha.
  */
 'use strict'
@@ -7,7 +7,7 @@
 const refresh = require('../lib/refresh.js')
 const assert = require('assert')
 const ponContext = require('pon-context')
-const theDB = require('the-db')
+const theDB = require('@the-/db')
 
 describe('refresh', function () {
   this.timeout(3000)

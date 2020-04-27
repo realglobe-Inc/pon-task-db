@@ -1,5 +1,5 @@
 /**
- * Test case for setup.
+ * @file Test case for setup.
  * Runs with mocha.
  */
 'use strict'
@@ -7,7 +7,7 @@
 const setup = require('../lib/setup.js')
 const assert = require('assert')
 const ponContext = require('pon-context')
-const theDB = require('the-db')
+const theDB = require('@the-/db')
 
 
 describe('setup', function () {

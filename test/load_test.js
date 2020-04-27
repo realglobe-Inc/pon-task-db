@@ -1,11 +1,11 @@
 /**
- * Test case for load.
+ * @file Test case for load.
  * Runs with mocha.
  */
 'use strict'
 
 const load = require('../lib/load.js')
-const theDB = require('the-db')
+const theDB = require('@the-/db')
 const ponContext = require('pon-context')
 
 describe('load', function () {

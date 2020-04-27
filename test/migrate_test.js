@@ -1,11 +1,11 @@
 /**
- * Test case for migrate.
+ * @file Test case for migrate.
  * Runs with mocha.
  */
 'use strict'
 
 const migrate = require('../lib/migrate.js')
-const theDB = require('the-db')
+const theDB = require('@the-/db')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 

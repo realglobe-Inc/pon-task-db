@@ -1,5 +1,5 @@
 /**
- * Test case for imp.
+ * @file Test case for imp.
  * Runs with mocha.
  */
 'use strict'

@@ -1,6 +1,6 @@
 {
   "name": "pon-task-db",
-  "version": "2.3.18",
+  "version": "2.4.0",
   "description": "DB task set for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -32,11 +32,11 @@
     "pon-task-seed": "^2.0.16"
   },
   "devDependencies": {
+    "@the-/db": "^17.3.0",
     "ababel": "^5.0.10",
     "amocha": "^5.0.1",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^2.0.1",
-    "ape-releasing": "^5.0.4",
     "ape-tasking": "^4.0.11",
     "ape-tmpl": "^6.0.13",
     "ape-updating": "^5.0.2",
@@ -45,11 +45,10 @@
     "pon-context": "^3.0.2",
     "pon-doc": "^2.0.1",
     "sqlite3": "^4.0.6",
-    "sugos-travis": "^2.0.7",
-    "the-db": "^11.0.2"
+    "sugos-travis": "^2.0.7"
   },
   "engines": {
-    "node": ">=7.6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }

@@ -1,5 +1,5 @@
 /**
- * Test case for useDB.
+ * @file Test case for useDB.
  * Runs with mocha.
  */
 'use strict'

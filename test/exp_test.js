@@ -1,5 +1,5 @@
 /**
- * Test case for exp.
+ * @file Test case for exp.
  * Runs with mocha.
  */
 'use strict'
@@ -7,7 +7,7 @@
 const exp = require('../lib/exp.js')
 const imp = require('../lib/imp.js')
 const {equal} = require('assert')
-const theDB = require('the-db')
+const theDB = require('@the-/db')
 const ponContext = require('pon-context')
 const asleep = require('asleep')
 

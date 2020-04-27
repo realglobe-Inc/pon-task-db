@@ -1,5 +1,5 @@
 /**
- * Test case for exec.
+ * @file Test case for exec.
  * Runs with mocha.
  */
 'use strict'
