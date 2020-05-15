@@ -1,6 +1,6 @@
 {
   "name": "pon-task-db",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "DB task set for pon",
   "main": "lib",
   "browser": "shim/browser",
@@ -29,7 +29,7 @@
     "askconfig": "^4.0.2",
     "asleep": "^1.0.3",
     "execcli": "^5.0.6",
-    "pon-task-seed": "^2.0.16"
+    "pon-task-seed": "^3.0.0"
   },
   "devDependencies": {
     "@the-/db": "^18.2.1",
